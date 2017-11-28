@@ -4,11 +4,11 @@ My solution for the Kompli Tech Challenge using Node, Express, and MongoDB.
 
 The plan of action:
 - use a generic email address from the University of Groningen (communicatie@rug.nl)
-- scrape the https://www.rug.nl/about-us/how-to-find-us/contact 
+- scrape the http://ao.com/help-and-advice/help-with-my-order/contact-us 
 - find email addresses 
 - find phone numbers
 - find address
-- move on to the wider domain https://www.rug.nl to validate accuracy
+- move on to the wider domain http://ao.com/ to validate accuracy
 
 **This is a WIP readme**
 
