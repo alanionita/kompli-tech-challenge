@@ -4,6 +4,12 @@ const cheerio = require('cheerio');
 
 const app = express();
 
+const Base = (req, res) => {
+  res.send('<h1>Routes available:</h1><article><h3>/scrape</h3><p>Leads to the results of the scraping the contact us page</p>');
+};
+
+app.get('/', Base);
+
 app.get('/scrape', (req, res) => {
   const url = 'http://ao.com/help-and-advice/help-with-my-order/contact-us';
   request(url, (error, response, html) => {
