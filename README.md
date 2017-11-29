@@ -58,11 +58,23 @@ $ npm run dev
 
 ### Navigating the API 
 
-In the browser navigate to http://localhost:8081/scrape and you should see an output.
+In the browser navigate to http://localhost:8081/ and you should see all the instructions needed to use the API.
+
+Mainly we're doing a POST request to http://localhost:8081/scrape with a JSON body that contains the email address in this format: 
+
+```
+{ "email": "alan@ao.com" }
+```
+
+When using Postman for the POST requests use POST, raw, JSON (application/json).
 
 ## Running the tests
 
-No tests included so far
+To initiate the Mocha and Chai built tests use the command below
+
+```
+npm t
+```
 
 ### Testing patterns
 
@@ -75,6 +87,9 @@ No tests included so far
 * [nodemon](https://www.npmjs.com/package/nodemon) - server change monitoring and restart
 * [express.js](https://expressjs.com) - web framework for nodeJS
 * [cheerio](https://www.npmjs.com/package/cheerio) - jQuery for the server
+* [request-promise](https://www.npmjs.com/package/request-promise) - a promise based add-on to request
+* [Mocha](https://mochajs.org) - Javascript test framework
+* [Chai](http://chaijs.com/guide/) - Test assertion library
 
 ## Authors
 

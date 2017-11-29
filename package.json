@@ -6,9 +6,10 @@
   "scripts": {
     "start": "node server.js",
     "dev": "NODE_ENV=dev nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha ./spec --exit",
     "lint": "eslint ./",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "precommit": "npm test"
   },
   "repository": {
     "type": "git",
@@ -22,18 +23,26 @@
   },
   "homepage": "https://github.com/alanionita/kompli-tech-challenge#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.4",
     "express": "^4.16.2",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "supertest": "^3.0.0"
   },
   "devDependencies": {
+    "async_hooks": "^1.0.0",
+    "chai": "^4.1.2",
     "eslint": "^4.12.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-chai-friendly": "^0.4.0",
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
+    "mocha": "^4.0.1",
     "nodemon": "^1.12.1",
     "prettier": "^1.8.2",
-    "prettier-eslint": "^8.2.2"
+    "prettier-eslint": "^8.2.2",
+    "supertest": "^3.0.0"
   }
 }
